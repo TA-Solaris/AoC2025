@@ -2,12 +2,14 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Map;
 import d1.D1P1;
+import d1.D1P2;
 import utils.Runner;
 
 public class Main {
 
-  private static final Map<String, Runner> RUNNERS = Map.of(
-      "D1P1", new D1P1());
+  private static final Map<String, Runner> RUNNERS = Map.ofEntries(
+      Map.entry("D1P1", new D1P1()),
+      Map.entry("D1P2", new D1P2()));
 
   public static void main(String[] args) throws Exception {
     if (args.length != 2) {
@@ -15,7 +17,7 @@ public class Main {
       return;
     }
 
-    String key = args[0];
+    String key = args[0].toUpperCase();
     String filePath = args[1];
 
     Runner runner = RUNNERS.get(key);
