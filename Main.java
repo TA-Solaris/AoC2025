@@ -3,13 +3,15 @@ import java.nio.file.Paths;
 import java.util.Map;
 import d1.D1P1;
 import d1.D1P2;
+import d2.D2P1;
 import utils.Runner;
 
 public class Main {
 
   private static final Map<String, Runner> RUNNERS = Map.ofEntries(
       Map.entry("D1P1", new D1P1()),
-      Map.entry("D1P2", new D1P2()));
+      Map.entry("D1P2", new D1P2()),
+      Map.entry("D2P1", new D2P1()));
 
   public static void main(String[] args) throws Exception {
     if (args.length != 2) {
