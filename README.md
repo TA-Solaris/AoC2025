@@ -9,4 +9,5 @@ A repository for my Advent of Code 2025 solutions in Java.
 | :---: | :---: | :---: | :---: |
 | [Day 1](https://adventofcode.com/2025/day/1) | [D1P2.java](d1/D1P2.java) | ⭐ | ⭐ |
 | [Day 2](https://adventofcode.com/2025/day/2) | [D2P2.java](d2/D2P2.java) | ⭐ | ⭐ |
+| [Day 3](https://adventofcode.com/2025/day/3) | [D3P2.java](d3/D3P2.java) | ⭐ | ⭐ |
 <!--- advent_readme_stars table --->
