@@ -8,6 +8,7 @@ import d2.D2P2;
 import d3.D3P1;
 import d3.D3P2;
 import d4.D4P1;
+import d4.D4P2;
 import utils.Runner;
 
 public class Main {
@@ -19,7 +20,8 @@ public class Main {
       Map.entry("D2P2", new D2P2()),
       Map.entry("D3P1", new D3P1()),
       Map.entry("D3P2", new D3P2()),
-      Map.entry("D4P1", new D4P1()));
+      Map.entry("D4P1", new D4P1()),
+      Map.entry("D4P2", new D4P2()));
 
   public static void main(String[] args) throws Exception {
     if (args.length != 2) {
