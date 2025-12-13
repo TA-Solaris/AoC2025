@@ -11,6 +11,7 @@ import d4.D4P1;
 import d4.D4P2;
 import d5.D5P1;
 import d5.D5P2;
+import d6.D6P1;
 import utils.Runner;
 
 public class Main {
@@ -25,7 +26,8 @@ public class Main {
       Map.entry("D4P1", new D4P1()),
       Map.entry("D4P2", new D4P2()),
       Map.entry("D5P1", new D5P1()),
-      Map.entry("D5P2", new D5P2()));
+      Map.entry("D5P2", new D5P2()),
+      Map.entry("D6P1", new D6P1()));
 
   public static void main(String[] args) throws Exception {
     if (args.length != 2) {
