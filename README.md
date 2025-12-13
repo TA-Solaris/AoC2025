@@ -13,5 +13,5 @@ A repository for my Advent of Code 2025 solutions in Java.
 | [Day 4](https://adventofcode.com/2025/day/4) | [D4P2.java](d4/D4P2.java) | ⭐ | ⭐ |
 | [Day 5](https://adventofcode.com/2025/day/5) | [D5P2.java](d5/D5P2.java) | ⭐ | ⭐ |
 | [Day 6](https://adventofcode.com/2025/day/6) | [D6P2.java](d6/D6P2.java) | ⭐ | ⭐ |
-| [Day 7](https://adventofcode.com/2025/day/7) |  | ⭐ |   |
+| [Day 7](https://adventofcode.com/2025/day/7) | [D7P2.java](d7/D7P2.java) | ⭐ | ⭐ |
 <!--- advent_readme_stars table --->
