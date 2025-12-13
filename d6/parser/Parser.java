@@ -12,7 +12,10 @@ public class Parser {
     List<Pair<String[], Character>> blocks = splitBlocks(lines);
 
     for (Pair<String[], Character> block : blocks) {
-      equations.add(new Equation(parseHorizontal(block.getFirst()), block.getSecond()));
+      List<Long> horizontal = parseHorizontal(block.getFirst());
+      List<Long> vertical = parseVertical(block.getFirst());
+      equations
+          .add(new Equation(horizontal, vertical, block.getSecond()));
     }
 
     return equations;
@@ -65,6 +68,30 @@ public class Parser {
       String digits = row.replace(" ", "");
       if (!digits.isEmpty()) {
         result.add(Long.parseLong(digits));
+      }
+    }
+
+    return result;
+  }
+
+  private static List<Long> parseVertical(String[] block) {
+    List<Long> result = new ArrayList<>();
+
+    int rows = block.length;
+    int cols = block[0].length();
+
+    for (int c = 0; c < cols; c++) {
+      StringBuilder sb = new StringBuilder();
+
+      for (int r = 0; r < rows; r++) {
+        char ch = block[r].charAt(c);
+        if (ch != ' ') {
+          sb.append(ch);
+        }
+      }
+
+      if (sb.length() > 0) {
+        result.add(Long.parseLong(sb.toString()));
       }
     }
 
